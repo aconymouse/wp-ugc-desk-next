@@ -23,6 +23,17 @@ It runs every day on [Owrite](https://www.owrite.id), an Indonesian news site, s
 - A report form on every article.
 - Web push with no third-party service. A service worker, VAPID keys, and `web-push`.
 
+## Why it works this way
+
+People who want to write for a news site usually have little time and less patience. So the two things I protect most: their writing never gets lost, and they always know what to do next.
+
+- Drafts save to the browser as you type and to the server every few seconds. A dropped signal mid-paragraph loses nothing.
+- The send button only turns on once the profile is complete, so nothing gets published without the writer's name and photo.
+- Revision notes show up on the account page, right next to the piece, not buried in an email.
+- Notification category picks save the moment they're ticked. There's no Save button to forget.
+- On iPhone, notifications only work after the site is added to the Home Screen. So readers get a button that shows them how, not a "not supported" message.
+- On Mac, the notification uses the article image as its icon, because macOS doesn't show large images in notifications.
+
 ## Requirements
 
 - Node.js 20.9+
@@ -101,8 +112,12 @@ lib/push/            subscriptions and delivery
 db/schema.sql        all tables
 ```
 
-## Credit
+## About the maker
 
-Made by Hafidz Nc ([Aconymous](https://aconymous.com), [GitHub](https://github.com/aconymouse), [LinkedIn](https://www.linkedin.com/in/tjuanmudaco/)) for Owrite.
+I'm Hafidz Nc, also known as Aconymous. I founded [Owrite](https://www.owrite.id) and build the product myself, design and code.
+
+My focus is UI/UX. To me the interface is part of the product, as much as the features are. A feature that's awkward to use gets abandoned, and in a newsroom that hits the business fast: a piece that never gets sent, or a reader who doesn't come back. That's why I spend more time on small details like the ones in [Why it works this way](#why-it-works-this-way) than on adding new features.
+
+[aconymous.com](https://aconymous.com) · [GitHub](https://github.com/aconymouse) · [LinkedIn](https://www.linkedin.com/in/tjuanmudaco/)
 
 MIT licensed.

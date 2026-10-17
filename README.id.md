@@ -23,6 +23,17 @@ Dipakai tiap hari di [Owrite](https://www.owrite.id). Teks tampilannya bahasa In
 - Form lapor di tiap artikel.
 - Notifikasi push tanpa layanan pihak ketiga. Pakai service worker, kunci VAPID, dan `web-push`.
 
+## Kenapa dibikin begini
+
+Orang yang mau nulis buat media biasanya cuma punya sedikit waktu dan sabar. Jadi yang paling aku jaga: tulisan mereka nggak hilang, dan mereka selalu tahu langkah berikutnya.
+
+- Draf disimpan ke browser tiap ngetik dan ke server tiap beberapa detik. Sinyal putus di tengah paragraf nggak bikin tulisan hilang.
+- Tombol Kirim baru nyala setelah profil lengkap, jadi tulisan nggak pernah terbit tanpa nama dan foto penulis.
+- Catatan revisi muncul di halaman akun, di samping tulisannya, bukan cuma nyelip di email.
+- Pilihan kategori notifikasi langsung tersimpan begitu dicentang. Nggak ada tombol Simpan yang kelupaan.
+- Di iPhone, notifikasi baru jalan setelah situs ditambahkan ke Layar Utama. Yang muncul tombol yang ngajarin caranya, bukan tulisan "tidak didukung".
+- Di Mac, notifikasi pakai gambar artikel sebagai ikon, karena macOS nggak nampilin gambar besar di notifikasi.
+
 ## Yang dibutuhkan
 
 - Node.js 20.9 ke atas
@@ -101,8 +112,12 @@ lib/push/            langganan dan pengiriman
 db/schema.sql        semua tabel
 ```
 
-## Kredit
+## Tentang pembuatnya
 
-Dibikin sama Hafidz Nc ([Aconymous](https://aconymous.com), [GitHub](https://github.com/aconymouse), [LinkedIn](https://www.linkedin.com/in/tjuanmudaco/)) buat Owrite.
+Aku Hafidz Nc, dikenal juga sebagai Aconymous. Founder [Owrite](https://www.owrite.id), dan yang ngerjain produknya sendiri, dari desain sampai kode.
+
+Fokusku di UI/UX. Buatku tampilan itu bagian dari produk, sama pentingnya kayak fiturnya. Fitur yang ribet dipakai ujung-ujungnya ditinggal, dan di media itu langsung kerasa ke bisnis: naskah yang batal dikirim, atau pembaca yang nggak balik lagi. Makanya aku lebih sering ngabisin waktu di detail kecil kayak di bagian [Kenapa dibikin begini](#kenapa-dibikin-begini) daripada nambah fitur baru.
+
+[aconymous.com](https://aconymous.com) · [GitHub](https://github.com/aconymouse) · [LinkedIn](https://www.linkedin.com/in/tjuanmudaco/)
 
 Lisensi MIT.
